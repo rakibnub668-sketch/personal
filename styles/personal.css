@@ -32,9 +32,10 @@ li a{
   font-weight: 500;
 
 }
+/* Hire section */
 .hire-title{
   font-size: 80px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 0;
 }
 .im{
@@ -63,7 +64,7 @@ li a{
 
 }
 
-/* Hire Me Section */
+
 
 .hire-me-container{
   display: flex;
@@ -105,7 +106,7 @@ li a{
   height: 420px;
   
 }
-.bg{
+.bg1{
   width: 420px;
   height: 420px;
 }
@@ -115,7 +116,7 @@ li a{
 .about-img-container{
   position: relative;
   height: 500px;
-  width: 450px;
+  width: 500px;
 }
 .img-mine{
   position: absolute;
@@ -135,18 +136,16 @@ li a{
   width: 100%;
 }
 .mine{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 420px;
+  height: 420px;
   
 }
 .bg2{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
- 
+  width: 420px;
+  height: 418px;
 }
+
+
 
 .about-container{
   display: flex;
@@ -159,7 +158,8 @@ li a{
 }
 .about-title{
  font-size: 48px;
- font-weight: bold;
+ /* font-weight: bold; */
+ color: rgba(105, 104, 113, 1);
 }
 
 .about-description{
@@ -313,4 +313,119 @@ margin:  88px auto 73px 74px;
 .social-links img{
   width: 40px;
   height: 40px;
+}
+
+/* Media Query */
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .nav ul{
+   justify-content: space-around;
+   gap: 25px; 
+  }
+  .hire-me-container{
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* margin-bottom: 200px; */
+  }
+  .hire-title{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  .hire-description{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .hire-des-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hire-btn{
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+    padding: 7px 15px;
+   
+  }
+  .hire-img-container{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .img-me{
+    height: 100%;
+    width: 100%;
+  }
+  .bg-1{
+    width: 100%;
+    height: 100%;
+  }
+  .me, .bg1{
+    width: 290px;
+    height: 290px;
+  }
+ 
+  .about-container{
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 500px;
+    margin: 0 auto;
+   
+  }
+  .about-des-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .about-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .about-description{
+    font-size: 8px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+   
+  }
+  .download-btn{
+    width: auto;
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+  .about-img-container{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .mine{
+    width: 290px;
+    height: 290px;
+    
+  }
+  .bg2{
+    height: 288px;
+    width: 290px;
+  }
+
+
+
 }
